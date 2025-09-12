@@ -1,0 +1,114 @@
+/* General Reset */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+/* Header */
+header {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header .highlight {
+  color: #ffcc00;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.7rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main Layout */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  background: #004466;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px 6px 0 0;
+}
+
+/* About section */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-img img {
+  max-width: 200px;
+  border-radius: 6px;
+}
+
+/* Flag */
+.flag-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flag-container img {
+  width: 60px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.3rem;
+}
+
+footer #lastModified {
+  color: #ffcc00;
+}

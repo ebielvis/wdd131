@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Elvis Ebi-Johnson</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Elvis Ebi-Johnson | Home page project with HTML, CSS, and JavaScript.">
+  <meta name="author" content="Elvis Ebi-Johnson">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/base.css">
+
+  <!-- JS -->
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Elvis Ebi-Johnson</span></h1>
+  </header>
+
+  <nav>
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+    <a href="https://byupw.instructure.com/">Canvas</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+    <a href="#">Final Project</a>
+  </nav>
+
+  <main>
+    <!-- About Me Card -->
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>My name is Elvis and I am a Mechatronics Engineering student from Nigeria. I enjoy learning about automation, robotics, and control systems. I also enjoy coding and working on web development projects. Outside academics, I serve in my church’s media and communications team.</p>
+
+          <h3>Nigeria</h3>
+          <div class="flag-container">
+            <img src="images/nigeria-flag.png" alt="Nigerian Flag">
+            <p><em>Official Flag of Nigeria</em></p>
+          </div>
+          <p>Nigeria is the most populous country in Africa, located in West Africa. It is known for its cultural diversity, Nollywood film industry, natural resources, and vibrant cities like Lagos and Abuja.</p>
+        </div>
+
+        <div class="about-img">
+          <img src="images/profile.jpg" alt="Profile Photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Card -->
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="https://placehold.co/">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 🌸 Elvis Ebi-Johnson 🌸 Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
