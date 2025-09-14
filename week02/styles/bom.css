@@ -1,0 +1,70 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background-color: #f4f9ff;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #e6f2ff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 70%;
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004c99;
+}
+
+ul {
+  margin-top: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+li button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
