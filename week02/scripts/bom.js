@@ -1,10 +1,11 @@
-// Get references to input, button, and list
+// Select DOM elements
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-// Add click event listener to button
-button.addEventListener('click', () => {
+// Add event listener for Add Chapter button
+button.addEventListener('click', function () {
+  // Ensure input is not empty
   if (input.value.trim() !== '') {
     // Create list item
     const li = document.createElement('li');
@@ -18,16 +19,19 @@ button.addEventListener('click', () => {
     // Append delete button to li
     li.append(deleteButton);
 
-    // Append li to list
+    // Append li to ul
     list.append(li);
 
-    // Clear input
-    input.value = '';
-    input.focus();
-
     // Add delete functionality
-    deleteButton.addEventListener('click', () => {
+    deleteButton.addEventListener('click', function () {
       list.removeChild(li);
+      input.focus(); // return cursor to input
     });
+
+    // Clear input for next entry
+    input.value = '';
   }
+
+  // Always refocus input
+  input.focus();
 });
