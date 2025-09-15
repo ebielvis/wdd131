@@ -1,0 +1,43 @@
+/* Larger screens: show nav inline and convert gallery to multiple columns */
+@media screen and (min-width: 800px) {
+
+  /* show nav inline and hide hamburger */
+  #hamburger {
+    display: none;
+  }
+
+  .primary-nav {
+    display: block !important;
+    width: auto;
+  }
+
+  .primary-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  main h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  /* Grid: 3 columns for gallery */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  figure {
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  figure:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(20,40,60,0.08);
+  }
+
+  /* Footer layout tweaks */
+  .site-footer {
+    padding: 1rem;
+  }
+}
