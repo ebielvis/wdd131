@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Images — WDD131 Week03</title>
+  <link rel="stylesheet" href="styles/responsive-images.css">
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Elvis Ebi-Johnson A. | Responsive-Imanges Page.">
+  <meta name="author" content="Elvis Ebi-Johnson Ayebataribaralatei">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Responsive Images — Week 03</h1>
+  </header>
+
+  <main>
+    <!-- Hero area using picture + source + img (srcset) -->
+    <div class="hero" role="region" aria-label="Hero image demonstrating responsive images">
+      <picture>
+        <!-- Large: used when viewport is at least 1000px -->
+        <source srcset="images/hero-large.webp" media="(min-width: 1000px)" type="image/webp">
+        <!-- Medium: used when viewport is at least 500px -->
+        <source srcset="images/hero-medium.webp" media="(min-width: 500px)" type="image/webp">
+        <!-- Fallback/default image: small -->
+        <!-- width & height reflect the largest image (helps avoid layout shift) -->
+        <img src="images/hero-small.webp"
+             alt="A scenic view of the temple with mountains in the background"
+             width="1500" height="750"
+             loading="lazy">
+      </picture>
+    </div>
+
+    <section class="info">
+      <h2>Notes</h2>
+      <ul>
+        <li>Create three images with a 2:1 aspect ratio and place them in <code>week03/images/</code>:</li>
+        <ul>
+          <li><code>hero-small.webp</code> — 500 × 250</li>
+          <li><code>hero-medium.webp</code> — 1000 × 500</li>
+          <li><code>hero-large.webp</code> — 1500 × 750</li>
+        </ul>
+        <li>Save WebP files at ~50% quality (or adjust to balance size & clarity).</li>
+        <li>If you need art direction (different crops), edit each image to focus on the important area.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Brigham Young University-Idaho | WDD 131</p>
+  </footer>
+</body>
+</html>

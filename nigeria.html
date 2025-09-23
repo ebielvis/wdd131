@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria</title>
+  <link rel="stylesheet" href="styles/nigeria.css">
+  <script src="scripts/nigeria.js" defer></script>
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Elvis Ebi-Johnson A. | Country page project with HTML, CSS, and JavaScript.">
+  <meta name="author" content="Elvis Ebi-Johnson Ayebataribaralatei">
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/lagos-large.webp" media="(min-width: 900px)">
+        <source srcset="images/lagos-medium.webp" media="(min-width: 600px)">
+        <img src="images/lagos-small.webp" alt="Lagos Skyline, Nigeria">
+      </picture>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Nigeria</h2>
+      <p>
+        Nigeria, often called the "Giant of Africa," is the most populous country on the continent. 
+        It is known for its diverse cultures, Nollywood (one of the largest film industries in the world), 
+        Afrobeat music, and beautiful natural landmarks such as Zuma Rock and Yankari National Park. 
+        Nigeria is also home to over 500 languages and rich traditions.
+      </p>
+      <picture>
+        <source srcset="images/zuma-rock-large.webp" media="(min-width: 900px)">
+        <source srcset="images/zuma-rock-medium.webp" media="(min-width: 600px)">
+        <img src="images/zuma-rock-small.webp" alt="Zuma Rock in Abuja, Nigeria">
+      </picture>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture">
+      <h2>Nigerian Culture</h2>
+      <p>
+        Nigerian culture is vibrant and colorful, reflected in its festivals, food, music, and clothing. 
+        Traditional attire such as agbada, gele, and ankara fabrics are celebrated worldwide. 
+        Cultural events like the Argungu Fishing Festival and Calabar Carnival attract thousands of visitors each year.
+      </p>
+      <picture>
+        <source srcset="images/nigeria-culture-large.webp" media="(min-width: 900px)">
+        <source srcset="images/nigeria-culture-medium.webp" media="(min-width: 600px)">
+        <img src="images/nigeria-culture-small.webp" alt="Traditional Nigerian Dance and Culture">
+      </picture>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2 id="weather-heading">Weather</h2>
+      <p>Temperature: <span id="temperature">28</span> °C</p>
+      <p>Wind Speed: <span id="wind">12</span> km/h</p>
+      <p>Wind Chill: <span id="windchill">N/A</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Nigeria Page | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
