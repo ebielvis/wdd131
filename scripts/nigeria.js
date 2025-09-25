@@ -1,23 +1,32 @@
-// Footer info
+// Footer dates
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Weather calculation
-function calculateWindChill(tempC, windKmh) {
-  return (
-    13.12 +
-    0.6215 * tempC -
-    11.37 * Math.pow(windKmh, 0.16) +
-    0.3965 * tempC * Math.pow(windKmh, 0.16)
-  ).toFixed(1);
+// Weather Data (simulated for assignment)
+const temperature = 28; // Celsius
+const windSpeed = 10; // km/h
+const conditions = "Sunny";
+
+// Output weather data
+document.getElementById("temperature").textContent = temperature;
+document.getElementById("wind").textContent = windSpeed;
+document.getElementById("conditions").textContent = conditions;
+
+// Wind Chill Calculation
+function calculateWindChill(temp, wind) {
+  if (temp <= 10 && wind > 4.8) {
+    return (
+      13.12 +
+      0.6215 * temp -
+      11.37 * Math.pow(wind, 0.16) +
+      0.3965 * temp * Math.pow(wind, 0.16)
+    ).toFixed(1);
+  } else {
+    return "N/A";
+  }
 }
 
-const temp = parseFloat(document.getElementById("temperature").textContent);
-const wind = parseFloat(document.getElementById("wind").textContent);
-
-let windChillText = "N/A";
-if (temp <= 10 && wind > 4.8) {
-  windChillText = calculateWindChill(temp, wind) + " °C";
-}
-
-document.getElementById("windchill").textContent = windChillText;
+document.getElementById("windchill").textContent = calculateWindChill(
+  temperature,
+  windSpeed
+);

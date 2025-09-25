@@ -1,11 +1,4 @@
-:root {
-  --primary-color: #008751; /* Green from Nigeria's flag */
-  --secondary-color: #ffffff;
-  --accent-color: #e5b400; /* Gold highlight */
-  --text-color: #222;
-  --font-main: 'Segoe UI', Tahoma, sans-serif;
-}
-
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,78 +6,61 @@
 }
 
 body {
-  font-family: var(--font-main);
-  color: var(--text-color);
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--secondary-color);
 }
 
+/* Header */
 header {
-  background-color: var(--primary-color);
+  background: #006400;
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 0.5rem;
+/* Hero Section */
+.hero {
+  position: relative;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.hero img, .about img, .culture img {
+.hero img {
   width: 100%;
   height: auto;
   display: block;
-  margin-top: 1rem;
-  border-radius: 8px;
+  object-fit: cover;
 }
 
-main {
+/* Data and Weather (default mobile layout) */
+.data, .weather {
+  background: rgba(255, 255, 255, 0.95);
   padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.about, .culture, .weather {
-  margin: 2rem 0;
-}
-
-.weather h2::after {
-  content: " ☀️";
-  margin-left: 0.5rem;
-}
-
+/* Footer */
 footer {
+  background: #006400;
+  color: white;
   text-align: center;
   padding: 1rem;
-  background: var(--primary-color);
-  color: white;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
-/* Responsive Layout */
-@media (min-width: 700px) {
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-  }
-
-  .hero {
-    grid-column: 1 / -1;
-  }
-
-  .about, .culture {
-    grid-column: 1 / 2;
+/* Wide view layout */
+@media (min-width: 1000px) {
+  .data {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    width: 20%;
   }
 
   .weather {
-    grid-column: 2 / 3;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    width: 20%;
   }
 }

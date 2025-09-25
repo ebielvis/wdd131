@@ -3,76 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nigeria</title>
-  <link rel="stylesheet" href="styles/nigeria.css">
-  <script src="scripts/nigeria.js" defer></script>
-  <meta name="description" content="WDD 131 Dynamic Web Fundamentals | Elvis Ebi-Johnson A. | Country page project with HTML, CSS, and JavaScript.">
-  <meta name="author" content="Elvis Ebi-Johnson Ayebataribaralatei">
+  <title>Nigeria | Country Page</title>
+  <link rel="stylesheet" href="nigeria.css">
 </head>
 <body>
   <header>
-    <h1>Nigeria</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Weather</a></li>
-      </ul>
-    </nav>
+    <h1>Welcome to Nigeria</h1>
   </header>
 
   <main>
     <!-- Hero Section -->
     <section class="hero">
       <picture>
-        <source srcset="images/lagos-large.webp" media="(min-width: 900px)">
-        <source srcset="images/lagos-medium.webp" media="(min-width: 600px)">
-        <img src="images/lagos-small.webp" alt="Lagos Skyline, Nigeria">
+        <source srcset="images/lagos-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/lagos-medium.webp" media="(min-width: 500px)">
+        <img src="images/lagos-small.webp" alt="Hero view of Lagos">
       </picture>
-    </section>
 
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Nigeria</h2>
-      <p>
-        Nigeria, often called the "Giant of Africa," is the most populous country on the continent. 
-        It is known for its diverse cultures, Nollywood (one of the largest film industries in the world), 
-        Afrobeat music, and beautiful natural landmarks such as Zuma Rock and Yankari National Park. 
-        Nigeria is also home to over 500 languages and rich traditions.
-      </p>
-      <picture>
-        <source srcset="images/zuma_rock-large.webp" media="(min-width: 900px)">
-        <source srcset="images/zuma_rock-medium.webp" media="(min-width: 600px)">
-        <img src="images/zuma_rock-small.webp" alt="Zuma Rock in Abuja, Nigeria">
-      </picture>
-    </section>
+      <!-- Data & Weather floating cards -->
+      <section class="data">
+        <h2>Demographics</h2>
+        <ul>
+          <li><strong>Population:</strong> 223 million</li>
+          <li><strong>Capital:</strong> Abuja</li>
+          <li><strong>Language:</strong> English (official)</li>
+          <li><strong>Currency:</strong> Naira (₦)</li>
+          <li><strong>Region:</strong> West Africa</li>
+          <li><strong>Timezone:</strong> WAT (UTC+1)</li>
+        </ul>
+      </section>
 
-    <!-- Culture Section -->
-    <section class="culture">
-      <h2>Nigerian Culture</h2>
-      <p>
-        Nigerian culture is vibrant and colorful, reflected in its festivals, food, music, and clothing. 
-        Traditional attire such as agbada, gele, and ankara fabrics are celebrated worldwide. 
-        Cultural events like the Argungu Fishing Festival and Calabar Carnival attract thousands of visitors each year.
-      </p>
-      <picture>
-        <source srcset="images/nigerian_culture-large.webp" media="(min-width: 900px)">
-        <source srcset="images/nigerian_culture-medium.webp" media="(min-width: 600px)">
-        <img src="images/nigerian_culture-small.webp" alt="Traditional Nigerian Dance and Culture">
-      </picture>
-    </section>
-
-    <!-- Weather Section -->
-    <section class="weather">
-      <h2 id="weather-heading">Weather</h2>
-      <p>Temperature: <span id="temperature">28</span> °C</p>
-      <p>Wind Speed: <span id="wind">12</span> km/h</p>
-      <p>Wind Chill: <span id="windchill">N/A</span></p>
+      <section class="weather">
+        <h2>Weather</h2>
+        <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+        <p><strong>Temperature:</strong> <span id="temperature"></span> °C</p>
+        <p><strong>Wind:</strong> <span id="wind"></span> km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+      </section>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Nigeria Page | Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="year"></span> Nigeria Page | WDD 131 Assignment</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
+
+  <script src="nigeria.js"></script>
 </body>
 </html>
