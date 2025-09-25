@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #006400;
+  --secondary-color: #f4f4f4;
+}
+
+
 /* General Reset */
 * {
   margin: 0;
@@ -5,14 +11,16 @@
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  background: var(--secondary-color);
 }
 
 /* Header */
 header {
-  background: #006400;
+  background: var(--primary-color);
   color: white;
   padding: 1rem;
   text-align: center;
