@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nigeria | Country Page</title>
   <link rel="stylesheet" href="styles/nigeria.css">
-
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Elvis Ebi-Johnson A. | Country page Assignment with HTML, CSS, and JavaScript.">
+  <meta name="author" content="Elvis Ebi-Johnson Ayebataribaralatei">
 </head>
 <body>
   <header>
@@ -36,6 +37,16 @@
 
       <section class="weather">
         <h2>Weather</h2>
+        <!-- SVG icon (mobile view only) -->
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="50" height="50">
+            <circle cx="32" cy="32" r="12" fill="gold"/>
+            <line x1="32" y1="4" x2="32" y2="16" stroke="orange" stroke-width="4"/>
+            <line x1="32" y1="48" x2="32" y2="60" stroke="orange" stroke-width="4"/>
+            <line x1="4" y1="32" x2="16" y2="32" stroke="orange" stroke-width="4"/>
+            <line x1="48" y1="32" x2="60" y2="32" stroke="orange" stroke-width="4"/>
+          </svg>
+        </div>
         <p><strong>Conditions:</strong> <span id="conditions"></span></p>
         <p><strong>Temperature:</strong> <span id="temperature"></span> °C</p>
         <p><strong>Wind:</strong> <span id="wind"></span> km/h</p>
@@ -45,10 +56,11 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Nigeria Page | WDD 131 Assignment</p>
+    <p>&copy; <span id="year"></span> Nigeria Page | WDD 131 Assignment <span class="smiley"></span></p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/nigeria.js"></script>
+  <!-- Place script at bottom so DOM loads first -->
+  <script src="scripts/nigeria.js" defer></script>
 </body>
 </html>

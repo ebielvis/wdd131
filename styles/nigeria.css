@@ -39,6 +39,16 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* SVG hidden on desktop */
+.weather .icon {
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .weather .icon {
+    display: none;
+  }
+}
+
 /* Footer */
 footer {
   background: #006400;
@@ -46,6 +56,19 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 1rem;
+  position: relative;
+}
+
+/* Pseudo-element emoticon (desktop only) */
+footer .smiley::after {
+  content: "😊";
+  margin-left: 0.5rem;
+  display: none;
+}
+@media (min-width: 1000px) {
+  footer .smiley::after {
+    display: inline;
+  }
 }
 
 /* Wide view layout */
