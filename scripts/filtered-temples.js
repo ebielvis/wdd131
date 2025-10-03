@@ -1,5 +1,3 @@
-// filtered-temples.js
-
 // Hamburger menu toggle
 const menuButton = document.getElementById("menu");
 const navMenu = document.getElementById("navmenu");
