@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Elvis Ebi-Johnson A. | Form page project with HTML, CSS, and JavaScript.">
+  <meta name="author" content="Elvis Ebi-Johnson Ayebataribaralatei">
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer src="scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+      <!-- Product Name -->
+      <label for="productName">Product Name</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Choose a Product ...</option>
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset class="rating-group">
+        <legend>Overall Rating</legend>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5" required>
+          <label for="star5">★★★★★</label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">★★★★☆</label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">★★★☆☆</label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2">★★☆☆☆</label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1">★☆☆☆☆</label>
+        </div>
+      </fieldset>
+
+      <!-- Date -->
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <!-- Features -->
+      <fieldset>
+        <legend>Which features did you find useful? <span>(Check all that apply)</span></legend>
+        <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" name="features" value="Design"> Design</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="writtenReview">Written Review <span>(Optional)</span></label>
+      <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Your Name <span>(Optional)</span></label>
+      <input type="text" id="userName" name="userName">
+
+      <!-- Submit -->
+      <input type="submit" value="Post Review" class="submit-btn">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 🌸 Product Review | Achievers University</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
