@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services | FreshSpin Laundry</title>
+  <meta name="description" content="FreshSpin Laundry services: Wash & fold, dry cleaning, ironing, home cleaning, pickup & delivery." />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body data-page="services">
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo"><span class="logo-pacifico">FreshSpin</span> Laundry</a>
+    </div>
+    <button id="menu" class="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <nav id="navmenu" class="nav" role="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p class="lead">Select a category to explore our professional cleaning solutions.</p>
+        </div>
+        </section>
+
+        <section class="container services-section">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="laundry">Laundry</button>
+            <button class="filter-btn" data-category="dry-cleaning">Dry Cleaning</button>
+            <button class="filter-btn" data-category="home-cleaning">Home Cleaning</button>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card" data-category="laundry">
+            <img src="images/wash-fold.jpg" alt="Wash and Fold Service">
+            <h3>Wash & Fold</h3>
+            <p>Freshly cleaned and folded clothes, ready for your wardrobe.</p>
+            </div>
+
+            <div class="service-card" data-category="dry-cleaning">
+            <img src="images/dry-clean.jpg" alt="Dry Cleaning Service">
+            <h3>Dry Cleaning</h3>
+            <p>Delicate garments treated with the utmost care and precision.</p>
+            </div>
+
+            <div class="service-card" data-category="home-cleaning">
+            <img src="images/house-cleaning.jpg" alt="Home Cleaning">
+            <h3>Home Cleaning</h3>
+            <p>Complete cleaning solutions for your home and living spaces.</p>
+            </div>
+
+            <div class="service-card" data-category="laundry">
+            <img src="images/ironing.jpg" alt="Ironing and Pressing">
+            <h3>Ironing & Pressing</h3>
+            <p>Crisp, neat, and wrinkle-free clothes every time.</p>
+            </div>
+
+            <div class="service-card" data-category="dry-cleaning">
+            <img src="images/suit-care.jpg" alt="Suit Care">
+            <h3>Suit & Formal Wear Care</h3>
+            <p>Keep your suits and dresses spotless and perfectly pressed.</p>
+            </div>
+
+            <div class="service-card" data-category="home-cleaning">
+            <img src="images/carpet-cleaning.jpg" alt="Carpet Cleaning">
+            <h3>Carpet Cleaning</h3>
+            <p>Revitalize your carpets and remove deep-seated dirt and stains.</p>
+            </div>
+        </div>
+        </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> FreshSpin Laundry | Designed by Elvis Ebi-Johnson</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pricing | FreshSpin Laundry</title>
+  <meta name="description" content="Transparent pricing for FreshSpin Laundry services." />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body data-page="pricing">
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="logo"><span class="logo-pacifico">FreshSpin</span> Laundry</a>
+    </div>
+    <button id="menu" class="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <nav id="navmenu" class="nav" role="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Pricing</h1>
+        <p class="lead">Transparent rates so you always know what you'll pay.</p>
+      </div>
+    </section>
+
+    <section class="container pricing-grid">
+      <div class="grid cols-3">
+        <div class="card price-card">
+          <h3>Wash & Fold</h3>
+          <p class="price">₦500 / kg</p>
+          <p>Fast turnarounds, eco-friendly detergents.</p>
+          <p><a class="btn" href="contact.html">Book Now</a></p>
+        </div>
+
+        <div class="card price-card">
+          <h3>Dry Cleaning</h3>
+          <p class="price">₦700 / kg</p>
+          <p>Professional treatment for delicate fabrics.</p>
+          <p><a class="btn" href="contact.html">Book Now</a></p>
+        </div>
+
+        <div class="card price-card">
+          <h3>Ironing</h3>
+          <p class="price">₦300 / kg</p>
+          <p>Perfectly pressed for a crisp look.</p>
+          <p><a class="btn" href="contact.html">Book Now</a></p>
+        </div>
+      </div>
+
+      <!-- Calculator Card -->
+      <div class="card calc-card">
+        <h3>Estimate Your Order</h3>
+        <div class="calc-form">
+          <label for="serviceSelect">Service</label>
+          <select id="serviceSelect">
+            <option value="500">Laundry - ₦500/kg</option>
+            <option value="700">Dry Cleaning - ₦700/kg</option>
+            <option value="300">Ironing - ₦300/kg</option>
+          </select>
+
+          <label for="weightInput">Weight (kg)</label>
+          <input id="weightInput" type="number" min="0" step="0.1" value="1">
+
+          <button id="calcBtn" class="btn">Calculate Total</button>
+
+          <p class="note">Pickup and delivery available for orders above ₦5,000.</p>
+
+          <div id="totalResult" class="total">Your total will appear here.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> FreshSpin Laundry | Designed by Elvis Ebi-Johnson</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
