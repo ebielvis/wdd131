@@ -209,6 +209,7 @@ function setupServicesFilter() {
 
   // initial render
   renderServices(services);
+  
 
   // 4) applyFilter uses array.filter
   function applyFilter(category) {
